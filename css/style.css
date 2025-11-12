@@ -1,0 +1,314 @@
+/* 🌸 General Style */
+/* This section defines global styles and animations for smooth scrolling and fade-in effects */
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling between sections */
+}
+
+body {
+  font-family: "Poppins", sans-serif; /* Sets a clean, modern font */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #fff8f5 0%, #ffeef0 100%); /* Soft gradient background */
+  color: #4a3c2a; /* Warm brown text color */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  animation: fadeInBody 1s ease-out; /* Smooth fade-in animation on page load */
+}
+
+/* Fade-in animation for the body */
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* 🍰 Header */
+/* Styles for the website header, including logo and navigation menu */
+header {
+  background-color: #f9e3e5; /* Soft pink background */
+  display: flex;
+  flex-direction: column; /* Stack logo and nav vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-bottom: 3px solid #f6b6c0; /* Thin decorative border */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Gentle shadow effect */
+  animation: slideDown 1.2s ease-out; /* Entrance animation from top */
+}
+
+/* Slide-down animation for the header */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Logo styling inside the header */
+header .logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%; /* Rounded logo shape */
+  transition: all 0.4s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect on logo — slightly enlarges and adds shadow */
+header .logo:hover {
+  transform: scale(1.08) rotate(2deg);
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+/* Navigation bar layout */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Space between links */
+}
+
+/* Navigation links */
+nav a {
+  color: #4a3c2a;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Link hover color */
+nav a:hover {
+  color: #e26a8a;
+}
+
+/* 🌷 Hero Section */
+/* This is the main intro section with background animation and central message */
+.hero {
+  background: linear-gradient(135deg, #ffeef0, #fff8f5); /* Gradient background */
+  background-size: 200% 200%; /* Allows smooth movement animation */
+  animation: gradientFlow 10s ease infinite; /* Infinite color flow */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #4a3c2a;
+}
+
+/* Background animation for hero section */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Transparent overlay layer to soften background colors */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 245, 245, 0.85);
+  z-index: 0;
+}
+
+/* Text container in the hero section */
+.hero-text {
+  position: relative;
+  z-index: 1; /* Places text above the overlay */
+  max-width: 850px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 65px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  animation: fadeUp 1.3s ease-out; /* Fade and slide-up animation */
+}
+
+/* Fade-up animation for the hero text box */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Main hero title */
+.hero-text h2 {
+  font-size: 3.3em;
+  margin-bottom: 20px;
+  color: #d95f84; /* Highlight pink tone */
+}
+
+/* Hero paragraph styling */
+.hero-text p {
+  font-size: 1.3em;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+/* Buttons section */
+.buttons {
+  margin-bottom: 40px;
+}
+
+/* General button style */
+.btn {
+  background-color: #f6b6c0;
+  color: white;
+  padding: 18px 45px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 0 10px;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+/* Button hover effect — lifts slightly and brightens */
+.btn:hover {
+  background-color: #e5899c;
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 6px 15px rgba(233, 137, 156, 0.4);
+}
+
+/* Signature line at the bottom of the hero section */
+.signature {
+  font-style: italic;
+  font-size: 1.3em;
+  color: #a35665;
+}
+
+/* 🧁 Footer */
+/* Defines the style for the website footer */
+footer {
+  background-color: #f9e3e5;
+  text-align: center;
+  padding: 18px;
+  font-size: 1em;
+  color: #4a3c2a;
+  border-top: 2px solid #f6b6c0;
+  animation: fadeInFooter 1.5s ease-out;
+}
+
+/* Footer fade-in animation */
+@keyframes fadeInFooter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* 💌 Floating welcome message box at the bottom right */
+.welcome-note {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #f8d9da;
+  color: #4a3c2a;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 0.95em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeInNote 2s ease-in-out;
+}
+
+/* Animation for floating note appearance */
+@keyframes fadeInNote {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🌈 Confetti canvas layer positioned above all content */
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Prevents blocking clicks */
+  z-index: 999; /* Keeps it on top */
+}
+
+/* 🍮 Courses Page */
+/* Styles specifically for the “Courses” page */
+.courses {
+  padding: 80px 50px;
+  text-align: center;
+  background-color: #fffaf7;
+}
+
+/* Page title style */
+.page-title {
+  font-size: 2.8em;
+  color: #d95f84;
+  margin-bottom: 10px;
+}
+
+/* Intro paragraph under the title */
+.page-intro {
+  font-size: 1.2em;
+  color: #4a3c2a;
+  margin-bottom: 50px;
+}
+
+/* Grid layout for all course cards */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+  gap: 35px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Individual course card styling */
+.course-card {
+  background-color: #ffffffdd;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect — slight lift */
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Course image style */
+.course-card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Course title */
+.course-card h3 {
+  color: #d95f84;
+  margin-bottom: 10px;
+}
+
+/* Course description */
+.course-card p {
+  font-size: 1em;
+  color: #4a3c2a;
+  line-height: 1.5;
+}
+
+/* Price text */
+.price {
+  font-weight: bold;
+  color: #e26a8a;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* “Join Now” button inside each course card */
+.course-card .btn {
+  display: inline-block;
+  background-color: #f6b6c0;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Button hover inside course card */
+.course-card .btn:hover {
+  background-color: #e5899c;
+  transform: scale(1.05);
+}

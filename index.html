@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 🌐 Basic Metadata -->
+  <!-- Defines document type, language, character encoding, and scaling for mobile devices -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- 🧁 Page Title -->
+  <title>Vanilla 🍰 | Baking Blog</title>
+  
+  <!-- 🎨 External CSS stylesheet for design and layout -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- 🍓 HEADER SECTION -->
+  <!-- Contains the website logo and main navigation bar -->
+  <header>
+    <!-- Website logo (image stored locally in media/images folder) -->
+    <img src="media/images/VANILLA.png" alt="Vanilla Logo" class="logo">
+    
+    <!-- Navigation menu linking to other pages in the website -->
+    <nav>
+      <a href="index.html" class="active">Home</a>     <!-- Highlights current page -->
+      <a href="recipes.html">Recipes</a>              <!-- Link to recipe list page -->
+      <a href="contact.html">Contact</a>              <!-- Link to contact form -->
+      <a href="courses.html">Courses</a>              <!-- Link to courses page -->
+    </nav>
+  </header>
+
+  <!-- 🌷 HERO SECTION -->
+  <!-- The main welcome section introducing the blog and its purpose -->
+  <section class="hero">
+    <div class="hero-text">
+      <!-- Title / Welcome message -->
+      <h2>Welcome to Vanilla</h2>
+
+      <!-- Short description of the blog -->
+      <p>
+        A cozy baking blog full of sweetness, creativity, and love.<br>
+        We’ll share tips, stories, and inspiration for your next baking adventure.
+      </p>
+
+      <!-- 🍪 Buttons to navigate to other sections of the site -->
+      <div class="buttons">
+        <a href="recipes.html" class="btn">See Recipes</a>     <!-- Opens recipes page -->
+        <a href="contact.html" class="btn">Contact Us</a>      <!-- Opens contact form -->
+        <a href="courses.html" class="btn">Join Our Courses</a> <!-- Opens courses page -->
+      </div>
+
+      <!-- Signature line -->
+      <p class="signature">With love,<br> Shira & Naomi 💗</p>
+    </div>
+  </section>
+
+  <!-- 🧁 FOOTER SECTION -->
+  <!-- Displays site ownership and credit line -->
+  <footer>
+    <p>© 2025 Vanilla Blog | Made with ❤️ by Shira & Naomi</p>
+  </footer>
+
+  <!-- 💌 FLOATING WELCOME NOTE -->
+  <!-- A small friendly message fixed to the corner of the page -->
+  <div class="welcome-note">
+    🍮 Thanks for visiting Vanilla Blog – Have a sweet day! 🍰
+  </div>
+
+  <!-- 🎊 CONFETTI ANIMATION -->
+  <!-- Canvas element used for displaying confetti animation on page load -->
+  <canvas id="confetti"></canvas>
+
+  <!-- External JavaScript file controlling confetti animation behavior -->
+  <script src="js/confetti.js"></script>
+</body>
+</html>
