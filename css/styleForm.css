@@ -1,0 +1,82 @@
+/* ==================================== */
+/* styleForm.css - Registration form design */
+/* ==================================== */
+
+.hero-style-form {
+    min-height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: none;
+}
+
+.form-text-box {
+    position: relative;
+    z-index: 1; 
+    max-width: 650px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    animation: fadeUp 1.3s ease-out; 
+}
+
+/* Titles and Intro */
+.page-title {
+    font-size: 2.5em;
+    color: #d95f84; 
+    margin-bottom: 10px;
+}
+
+.page-intro {
+    font-size: 1.1em;
+    color: #4a3c2a;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.registration-form {
+    text-align: right; /* Right-to-left alignment */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #e26a8a; 
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form select,
+.registration-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f6b6c0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.registration-form input:focus,
+.registration-form textarea:focus,
+.registration-form select:focus {
+    border-color: #d95f84;
+    outline: none;
+}
+
+.registration-form textarea {
+    resize: vertical;
+}
+
+.registration-form .btn {
+    width: 100%;
+    margin-top: 15px;
+}

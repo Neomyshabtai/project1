@@ -1,0 +1,69 @@
+/* =================================
+  🍰 Vertical Recipes List Styles
+  ================================= */
+
+ /* 🎯 Centering the main page title and introductory paragraph */
+.page-title, 
+.page-intro {
+    text-align: center;
+}
+
+/* 📏 Overrides the horizontal flex for recipes-list */
+.recipes-list {
+  flex-wrap: wrap; 
+  overflow-x: hidden; 
+  flex-direction: row; 
+  
+  /* 🛑 Fix: Removed align-items: center; */
+  justify-content: center; 
+  
+  padding: 20px 40px; 
+  max-width: 100%; 
+  margin: 0 auto; 
+}
+
+/* 💌 Individual Recipe Card Style (Override) */
+.recipe-card-vertical {
+  flex: 0 0 100%;
+  max-width: 1000px; 
+  
+  /* ✅ Fix: Explicitly center the 300px card within the 100% container */
+  margin: 0 auto 25px auto; 
+  
+  display: block; 
+  gap: 0; 
+  padding: 20px;
+  text-align: center; 
+}
+
+/* 🆕 הכלל של הוידאו בתוך styleRecipes.css */
+.recipe-card-vertical video {
+  width: 100%; 
+  height: 400px; 
+  object-fit: cover; 
+  border-radius: 12px;
+  margin-bottom: 15px; 
+}
+
+/* ... שאר ה-CSS של h3 ו-p נשאר כפי שהיה ... */
+
+.recipe-card-vertical h3 {
+  margin-top: 0;
+  margin-bottom: 5px; 
+}
+
+.recipe-card-vertical p {
+  margin: 5px 0;
+}
+
+/* 📱 Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .recipe-card-vertical {
+    max-width: 90%; 
+    margin: 0 auto 25px auto;
+  }
+
+  .recipe-card-vertical img {
+     height: 180px;
+  }
+}

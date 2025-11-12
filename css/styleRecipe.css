@@ -1,0 +1,104 @@
+/*
+   styleRecipePage.css - עיצוב מינימלי לדף מתכון בודד
+   מבוסס על סגנון "Vanilla" הכללי (styleBase.css)
+*/
+
+.recipe-page-content {
+    /* הגבלה לרוחב סטנדרטי ומירכוז הבלוק הראשי */
+    max-width: 900px; 
+    margin: 40px auto; 
+    padding: 0 20px;
+    text-align: center; /* ממרכז את הכותרות והפסקאות הראשיות */
+}
+
+/* כותרות וסיכום */
+.recipe-title {
+    color: #d95f84;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.recipe-summary {
+    font-size: 1.1em;
+    color: #4a3c2a;
+    margin-bottom: 30px;
+}
+
+/* מידע מהיר (זמנים) */
+.recipe-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 15px 0;
+    border-top: 1px solid #f6b6c0; 
+    border-bottom: 1px solid #f6b6c0;
+}
+
+.info-item {
+    font-weight: bold;
+    color: #e26a8a;
+}
+
+/* ==================================== */
+/* פריסת רכיבים והוראות (Grid) והעיצוב החדש */
+/* ==================================== */
+
+.recipe-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.ingredients,
+.instructions {
+    padding: 25px;
+    border-radius: 15px; /* פינות מעוגלות */
+    /* 💥 השינוי העיקרי: יישור הטקסט לשמאל בתוך הבלוקים */
+    text-align: left; 
+}
+
+.ingredients {
+    /* 🎨 צבע רקע ורוד בהיר לרכיבים */
+    background-color: #fcebeb; 
+}
+
+.instructions {
+    /* 🎨 צבע רקע ורוד מעט שונה להוראות */
+    background-color: #ffeef0; 
+}
+
+.ingredients h2,
+.instructions h2 {
+    color: #d95f84;
+    border-bottom: 1px solid #f6b6c0;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.ingredients ul,
+.instructions ol {
+    /* מאפס את ריווח ה-padding-right שהיה מוגדר לעברית ומגדיר לשמאל */
+    padding-left: 20px; 
+    padding-right: 0;
+    list-style-position: inside;
+}
+
+.ingredients li,
+.instructions li {
+    margin-bottom: 15px; /* מרווח תחתון בין כל פריט ברשימה */
+    line-height: 1.4; /* שומר על רווח נשימה בתוך השורה עצמה */
+}
+
+/* רספונסיביות - ערימה במסכים קטנים */
+@media (max-width: 768px) {
+    .recipe-details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .recipe-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

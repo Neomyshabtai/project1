@@ -113,7 +113,7 @@ nav a:hover {
   z-index: 1; /* Places text above the overlay */
   max-width: 850px;
   background: rgba(255, 255, 255, 0.9);
-  padding: 65px;
+  padding: 40px;
   border-radius: 25px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   animation: fadeUp 1.3s ease-out; /* Fade and slide-up animation */

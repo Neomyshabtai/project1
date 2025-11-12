@@ -1,194 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 🌸 Basic Page Setup -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vanilla 🍰 | Courses</title>
 
-  <!-- External CSS file -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleBase.css">
+  <link rel="stylesheet" href="css/styleCourses.css">
 
-  <style>
-    /* =============================
-       🎨 Inline CSS for this page
-       ============================= */
-
-    /* 🌼 General Page Style */
-    body {
-      background-color: #fff8f9; /* Soft pastel background */
-      font-family: "Poppins", sans-serif; /* Clean modern font */
-      color: #4a3a36;
-      margin: 0;
-    }
-
-    /* 🍰 Header Style */
-    header {
-      background-color: #fcdbe7; /* Pink header background */
-      text-align: center;
-      padding: 15px 0;
-    }
-
-    /* Logo inside header */
-    .logo {
-      height: 90px;
-      margin-bottom: 10px;
-    }
-
-    /* 🔗 Navigation Links */
-    nav a {
-      color: #4a3a36;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-
-    /* Highlight active or hovered link */
-    nav a:hover,
-    nav a.active {
-      color: #d85b84;
-    }
-
-    /* 🍬 Title of the page */
-    .page-title {
-      text-align: center;
-      color: #d85b84;
-      font-size: 2.2em;
-      margin-top: 40px;
-      font-weight: 700;
-    }
-
-    /* Short intro paragraph under title */
-    .page-intro {
-      text-align: center;
-      font-size: 1.1em;
-      color: #7a6560;
-      margin-bottom: 40px;
-    }
-
-    /* 🧁 Courses Grid Layout — one horizontal scrollable row */
-    .courses-grid {
-      display: flex;
-      justify-content: center;
-      align-items: stretch;
-      gap: 30px;
-      flex-wrap: nowrap; /* Force a single row */
-      overflow-x: auto;  /* Horizontal scroll for small screens */
-      padding: 20px 40px 80px;
-      max-width: 100%;
-      scroll-behavior: smooth; /* Smooth horizontal scrolling */
-    }
-
-    /* 💌 Individual Course Card Style */
-    .course-card {
-      flex: 0 0 270px; /* Fixed width for each card */
-      background-color: #fff;
-      border-radius: 18px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    /* Hover animation — gentle lift */
-    .course-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Course image styling */
-    .course-card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 15px;
-      margin-bottom: 15px;
-      transition: transform 0.4s ease;
-    }
-
-    /* Slight zoom effect when hovering over the card */
-    .course-card:hover img {
-      transform: scale(1.05);
-    }
-
-    /* Course title */
-    .course-card h3 {
-      color: #d85b84;
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
-
-    /* Course description text */
-    .course-card p {
-      font-size: 0.95em;
-      line-height: 1.5em;
-    }
-
-    /* Course price text */
-    .price {
-      font-weight: bold;
-      margin: 10px 0;
-      color: #4a3a36;
-    }
-
-    /* “Join Now” button style */
-    .btn {
-      display: inline-block;
-      background-color: #f9a4b7;
-      color: white;
-      border-radius: 30px;
-      padding: 10px 24px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    /* Button hover effect */
-    .btn:hover {
-      background-color: #e86f8d;
-      transform: scale(1.05);
-    }
-
-    /* 🩷 Footer style */
-    footer {
-      background-color: #fcdbe7;
-      text-align: center;
-      padding: 10px;
-      font-size: 0.9em;
-      color: #4a3a36;
-    }
-
-    /* 🌈 Soft horizontal scrollbar for course row */
-    .courses-grid::-webkit-scrollbar {
-      height: 10px;
-    }
-    .courses-grid::-webkit-scrollbar-thumb {
-      background-color: #f9a4b7;
-      border-radius: 10px;
-    }
-    .courses-grid::-webkit-scrollbar-track {
-      background: #fde5ec;
-      border-radius: 10px;
-    }
-  </style>
-</head>
+  </head>
 
 <body>
-  <!-- 🍓 HEADER SECTION -->
-  <!-- Contains the website logo and navigation menu -->
   <header>
     <img src="media/images/VANILLA.png" alt="Vanilla Logo" class="logo">
     <nav>
       <a href="index.html">Home</a>
       <a href="recipes.html">Recipes</a>
       <a href="contact.html">Contact</a>
-      <a href="courses.html" class="active">Courses</a> <!-- Highlighted current page -->
-    </nav>
+      <a href="courses.html" class="active">Courses</a> </nav>
   </header>
 
-  <!-- 🍰 MAIN COURSES SECTION -->
-  <!-- Displays a horizontal scrollable row of course cards -->
   <section class="courses">
     <h2 class="page-title">Our Sweet Courses 🍬</h2>
     <p class="page-intro">
@@ -196,49 +27,42 @@
       Learn the secrets of chocolate, cake design, cookies, and more!
     </p>
 
-    <!-- 💫 Flex container for all course cards -->
     <div class="courses-grid">
       
-      <!-- 🍫 Chocolate Course Card -->
       <div class="course-card">
-        <img src="https://media3.reshet.tv/image/upload/t_grid-item-large/v1731320825/uploads/2024/904332206.jpg" alt="Chocolate Course">
+        <img src="media/images/chocolate.png" alt="Chocolate Course">
         <h3>Chocolate Magic Workshop 🍫</h3>
         <p>Learn to temper, mold, and decorate chocolate like a professional chocolatier.<br>Perfect for beginners and sweet lovers!</p>
         <p class="price">$49</p>
-        <a href="#" class="btn">Join Now</a>
+        <a href="form.html" class="btn">Join Now</a>
       </div>
 
-      <!-- 🎂 Cake Design Course Card -->
       <div class="course-card">
-        <img src="https://i.pinimg.com/originals/1f/58/09/1f58098537447d55ace8d366efe030be.jpg" alt="Cake Design">
+        <img src="media/images/cake.png" alt="Cake Design">
         <h3>Cake Design & Decoration 🎂</h3>
         <p>Master buttercream, fondant, and modern cake styling techniques for your next show-stopping creation.</p>
         <p class="price">$59</p>
-        <a href="#" class="btn">Join Now</a>
+        <a href="form.html" class="btn">Join Now</a>
       </div>
 
-      <!-- 🍪 Cookies Course Card -->
       <div class="course-card">
-        <img src="https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cookies Course">
+        <img src="media/images/Cookies.png" alt="Cookies Course">
         <h3>Perfect Cookies Class 🍪</h3>
         <p>Bake chewy, soft, and crispy cookies with pro tips for texture, flavor, and decoration.</p>
         <p class="price">$39</p>
-        <a href="#" class="btn">Join Now</a>
+        <a href="form.html" class="btn">Join Now</a>
       </div>
 
-      <!-- 🥐 French Pastry Course Card -->
       <div class="course-card">
-        <img src="https://st1.foodsd.co.il/Images/Recipes/xxl/Recipe-7742-ZiaoMFtJfCMcTXJb.jpg" alt="French Pastry">
+        <img src="media/images/eclairs.png" alt="French Pastry">
         <h3>French Pastry Masterclass 🥐</h3>
         <p>Discover the art of croissants, éclairs, and choux pastry with tips from classic French pâtisserie.</p>
         <p class="price">$69</p>
-        <a href="#" class="btn">Join Now</a>
+        <a href="form.html" class="btn">Join Now</a>
       </div>
     </div>
   </section>
 
-  <!-- 🧁 FOOTER SECTION -->
-  <!-- Appears at the bottom of the page -->
   <footer>
     <p>© 2025 Vanilla Blog | Made with ❤️ by Shira & Naomi</p>
   </footer>
