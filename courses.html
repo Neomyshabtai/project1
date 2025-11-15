@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- 🌐 Basic Metadata -->
+  <!-- Defines document type, language, character encoding, and scaling for mobile devices -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 🧁 Page Title -->
+  <!-- Title shown in the browser tab -->
   <title>Vanilla 🍰 | Courses</title>
 
+  <!-- 🎨 External CSS stylesheets -->
+  <!-- styleBase.css = global design rules -->
+  <!-- styleCourses.css = specific design rules for the courses page -->
   <link rel="stylesheet" href="css/styleBase.css">
   <link rel="stylesheet" href="css/styleCourses.css">
-
-  </head>
+</head>
 
 <body>
+  <!-- 🍓 HEADER SECTION -->
+  <!-- Contains the website logo and navigation menu -->
   <header>
+    <!-- Website logo -->
     <img src="media/images/VANILLA.png" alt="Vanilla Logo" class="logo">
+
+    <!-- Navigation links -->
     <nav>
       <a href="index.html">Home</a>
       <a href="recipes.html">Recipes</a>
       <a href="contact.html">Contact</a>
-      <a href="courses.html" class="active">Courses</a> </nav>
+      <a href="courses.html" class="active">Courses</a> <!-- Highlights current page -->
+    </nav>
   </header>
 
+  <!-- 🍮 COURSES SECTION -->
+  <!-- Main content area showing available baking courses -->
   <section class="courses">
+    <!-- Page title -->
     <h2 class="page-title">Our Sweet Courses 🍬</h2>
+
+    <!-- Short introduction text -->
     <p class="page-intro">
       Join one of our delicious baking classes — made with love and creativity.<br>
       Learn the secrets of chocolate, cake design, cookies, and more!
     </p>
 
+    <!-- Grid layout for course cards -->
     <div class="courses-grid">
       
+      <!-- 🍫 Course Card: Chocolate Workshop -->
       <div class="course-card">
+        <!-- Course image -->
         <img src="media/images/chocolate.png" alt="Chocolate Course">
+        <!-- Course title -->
         <h3>Chocolate Magic Workshop 🍫</h3>
+        <!-- Course description -->
         <p>Learn to temper, mold, and decorate chocolate like a professional chocolatier.<br>Perfect for beginners and sweet lovers!</p>
+        <!-- Course price -->
         <p class="price">$49</p>
+        <!-- Button to join course -->
         <a href="form.html" class="btn">Join Now</a>
       </div>
 
+      <!-- 🎂 Course Card: Cake Design -->
       <div class="course-card">
         <img src="media/images/cake.png" alt="Cake Design">
         <h3>Cake Design & Decoration 🎂</h3>
@@ -45,6 +71,7 @@
         <a href="form.html" class="btn">Join Now</a>
       </div>
 
+      <!-- 🍪 Course Card: Cookies -->
       <div class="course-card">
         <img src="media/images/Cookies.png" alt="Cookies Course">
         <h3>Perfect Cookies Class 🍪</h3>
@@ -53,6 +80,7 @@
         <a href="form.html" class="btn">Join Now</a>
       </div>
 
+      <!-- 🥐 Course Card: French Pastry -->
       <div class="course-card">
         <img src="media/images/eclairs.png" alt="French Pastry">
         <h3>French Pastry Masterclass 🥐</h3>
@@ -63,6 +91,8 @@
     </div>
   </section>
 
+  <!-- 🧁 FOOTER SECTION -->
+  <!-- Displays site ownership and credit line -->
   <footer>
     <p>© 2025 Vanilla Blog | Made with ❤️ by Shira & Naomi</p>
   </footer>

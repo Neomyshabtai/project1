@@ -1,17 +1,17 @@
 /*
-   styleRecipePage.css - עיצוב מינימלי לדף מתכון בודד
-   מבוסס על סגנון "Vanilla" הכללי (styleBase.css)
+   styleRecipe.css - Minimal styling for a single recipe page
+   Based on the general "Vanilla" style (styleBase.css)
 */
 
 .recipe-page-content {
-    /* הגבלה לרוחב סטנדרטי ומירכוז הבלוק הראשי */
+    /* Limit width and center main block */
     max-width: 900px; 
     margin: 40px auto; 
     padding: 0 20px;
-    text-align: center; /* ממרכז את הכותרות והפסקאות הראשיות */
+    text-align: center; /* Center headings and summary */
 }
 
-/* כותרות וסיכום */
+/* Headings and summary */
 .recipe-title {
     color: #d95f84;
     font-size: 2.5em;
@@ -24,7 +24,7 @@
     margin-bottom: 30px;
 }
 
-/* מידע מהיר (זמנים) */
+/* Quick info (prep/cook times) */
 .recipe-info {
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@
 }
 
 /* ==================================== */
-/* פריסת רכיבים והוראות (Grid) והעיצוב החדש */
+/* Ingredients & Instructions Grid Layout */
 /* ==================================== */
 
 .recipe-details-grid {
@@ -54,19 +54,16 @@
 .ingredients,
 .instructions {
     padding: 25px;
-    border-radius: 15px; /* פינות מעוגלות */
-    /* 💥 השינוי העיקרי: יישור הטקסט לשמאל בתוך הבלוקים */
-    text-align: left; 
+    border-radius: 15px; /* Rounded corners */
+    text-align: left;    /* Align text to the left */
 }
 
 .ingredients {
-    /* 🎨 צבע רקע ורוד בהיר לרכיבים */
-    background-color: #fcebeb; 
+    background-color: #fcebeb; /* Light pink background */
 }
 
 .instructions {
-    /* 🎨 צבע רקע ורוד מעט שונה להוראות */
-    background-color: #ffeef0; 
+    background-color: #ffeef0; /* Slightly different pink background */
 }
 
 .ingredients h2,
@@ -79,7 +76,6 @@
 
 .ingredients ul,
 .instructions ol {
-    /* מאפס את ריווח ה-padding-right שהיה מוגדר לעברית ומגדיר לשמאל */
     padding-left: 20px; 
     padding-right: 0;
     list-style-position: inside;
@@ -87,11 +83,11 @@
 
 .ingredients li,
 .instructions li {
-    margin-bottom: 15px; /* מרווח תחתון בין כל פריט ברשימה */
-    line-height: 1.4; /* שומר על רווח נשימה בתוך השורה עצמה */
+    margin-bottom: 15px; /* Space between list items */
+    line-height: 1.4;    /* Comfortable line spacing */
 }
 
-/* רספונסיביות - ערימה במסכים קטנים */
+/* Responsive layout for smaller screens */
 @media (max-width: 768px) {
     .recipe-details-grid {
         grid-template-columns: 1fr;

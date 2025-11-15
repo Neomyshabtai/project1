@@ -2,19 +2,19 @@
 /* styleForm.css - Registration form design */
 /* ==================================== */
 
+/* styleForm.css - Registration form */
+
+/* Center form section */
 .hero-style-form {
     min-height: 80vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
-    background: none;
 }
 
+/* Form box */
 .form-text-box {
-    position: relative;
-    z-index: 1; 
     max-width: 650px;
     background: rgba(255, 255, 255, 0.95);
     padding: 40px;
@@ -23,7 +23,7 @@
     animation: fadeUp 1.3s ease-out; 
 }
 
-/* Titles and Intro */
+/* Titles */
 .page-title {
     font-size: 2.5em;
     color: #d95f84; 
@@ -36,9 +36,9 @@
     margin-bottom: 30px;
 }
 
-/* Form Styling */
+/* Form fields */
 .registration-form {
-    text-align: right; /* Right-to-left alignment */
+    text-align: right;
 }
 
 .form-group {
@@ -52,6 +52,7 @@
     color: #e26a8a; 
 }
 
+/* Inputs */
 .registration-form input[type="text"],
 .registration-form input[type="email"],
 .registration-form select,
@@ -60,7 +61,6 @@
     padding: 10px;
     border: 1px solid #f6b6c0;
     border-radius: 6px;
-    box-sizing: border-box;
     font-size: 1em;
     transition: border-color 0.3s;
 }
@@ -76,6 +76,7 @@
     resize: vertical;
 }
 
+/* Button */
 .registration-form .btn {
     width: 100%;
     margin-top: 15px;

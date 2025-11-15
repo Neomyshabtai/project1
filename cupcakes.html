@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 🌐 Basic Metadata -->
+    <!-- Defines document type, language, character encoding, and scaling for mobile devices -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🧁 Page Title -->
+    <!-- Title shown in the browser tab -->
     <title>Vanilla 🍰 | Vanilla Bean Cupcakes</title>
 
-   <link rel="stylesheet" href="css/styleBase.css">
+    <!-- 🎨 External CSS stylesheets -->
+    <!-- styleBase.css = global design rules -->
+    <!-- styleRecipe.css = specific design rules for individual recipe pages -->
+    <link rel="stylesheet" href="css/styleBase.css">
     <link rel="stylesheet" href="css/styleRecipe.css">
 </head>
 
 <body>
+    <!-- 🍓 HEADER SECTION -->
+    <!-- Contains the website logo and navigation menu -->
     <header>
+        <!-- Website logo -->
         <img src="media/images/VANILLA.png" alt="Vanilla Logo" class="logo">
+
+        <!-- Navigation links -->
         <nav>
             <a href="index.html">Home</a>
-            <a href="recipes.html" class="active">Recipes</a>
+            <a href="recipes.html" class="active">Recipes</a> <!-- Highlights current page -->
             <a href="contact.html">Contact</a>
             <a href="courses.html">Courses</a>
         </nav>
     </header>
 
+    <!-- 🧁 RECIPE CONTENT SECTION -->
+    <!-- Main content area for the cupcake recipe -->
     <section class="recipe-page-content">
         
+        <!-- Recipe title -->
         <h1 class="recipe-title">Vanilla Bean Cupcakes 🧁</h1>
-        <p class="recipe-summary">These perfectly fluffy vanilla cakes, crowned with a light, airy vanilla bean buttercream, are a delightful classic for any sweet occasion.</p>
         
+        <!-- Short recipe summary -->
+        <p class="recipe-summary">
+            These perfectly fluffy vanilla cakes, crowned with a light, airy vanilla bean buttercream, are a delightful classic for any sweet occasion.
+        </p>
+        
+        <!-- Quick recipe info (prep time, bake time, servings) -->
         <div class="recipe-info">
             <span class="info-item">⏱️ 20 min prep</span>
             <span class="info-item">🔥 20 min bake</span>
             <span class="info-item">👤 Makes 12 cupcakes</span>
         </div>
         
+        <!-- Grid layout for ingredients and instructions -->
         <div class="recipe-details-grid">
             
+            <!-- 🥣 Ingredients list -->
             <div class="ingredients">
                 <h2>Ingredients 🥣</h2>
                 <ul>
-                    <li>$1.5$ cups all-purpose flour</li>
+                    <li>1.5 cups all-purpose flour</li>
                     <li>1.5 teaspoons baking powder</li>
                     <li>1/2 teaspoon salt</li>
                     <li>1/2 cup unsalted butter, softened</li>
@@ -47,19 +70,22 @@
                 </ul>
             </div>
 
+            <!-- 📝 Step-by-step instructions -->
             <div class="instructions">
                 <h2>Instructions 📝</h2>
                 <ol>
-                    <li>Preheat & Prep: Preheat oven to $180^\circ\text{C}$ ($350^\circ\text{F}$) and line a muffin tin with paper liners.</li>
-                    <li>Dry Mix: Whisk together flour, baking powder, and salt in a bowl. Set aside.</li>
-                    <li>Cream: Cream butter and sugar until light and fluffy. Beat in eggs one at a time, then add vanilla extract.</li>
-                    <li>Combine: Gradually add the dry mixture alternating with the milk, beginning and ending with the dry ingredients. Mix until just combined.</li>
-                    <li>Bake: Fill liners two-thirds full. Bake for 18-20 minutes, or until a toothpick inserted comes out clean. Cool completely before frosting.</li>
+                    <li><strong>Preheat & Prep:</strong> Preheat oven to 180°C (350°F) and line a muffin tin with paper liners.</li>
+                    <li><strong>Dry Mix:</strong> Whisk together flour, baking powder, and salt in a bowl. Set aside.</li>
+                    <li><strong>Cream:</strong> Cream butter and sugar until light and fluffy. Beat in eggs one at a time, then add vanilla extract.</li>
+                    <li><strong>Combine:</strong> Gradually add the dry mixture alternating with the milk, beginning and ending with the dry ingredients. Mix until just combined.</li>
+                    <li><strong>Bake:</strong> Fill liners two-thirds full. Bake for 18–20 minutes, or until a toothpick inserted comes out clean. Cool completely before frosting.</li>
                 </ol>
             </div>
         </div>
     </section>
 
+    <!-- 🧁 FOOTER SECTION -->
+    <!-- Displays site ownership and credit line -->
     <footer>
         <p>© 2025 Vanilla Blog | Made with ❤️ by Shira & Naomi</p>
     </footer>

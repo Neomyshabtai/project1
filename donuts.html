@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 🌐 Basic Metadata -->
+    <!-- Defines document type, language, character encoding, and scaling for mobile devices -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🧁 Page Title -->
+    <!-- Title shown in the browser tab -->
     <title>Vanilla 🍰 | Homemade Glazed Doughnuts</title>
     
+    <!-- 🎨 External CSS stylesheets -->
+    <!-- styleBase.css = global design rules -->
+    <!-- styleRecipe.css = specific design rules for individual recipe pages -->
     <link rel="stylesheet" href="css/styleBase.css">
     <link rel="stylesheet" href="css/styleRecipe.css">
 </head>
 
 <body>
+    <!-- 🍓 HEADER SECTION -->
+    <!-- Contains the website logo and navigation menu -->
     <header>
+        <!-- Website logo -->
         <img src="media/images/VANILLA.png" alt="Vanilla Logo" class="logo">
+
+        <!-- Navigation links -->
         <nav>
             <a href="index.html">Home</a>
-            <a href="recipes.html" class="active">Recipes</a>
+            <a href="recipes.html" class="active">Recipes</a> <!-- Highlights current page -->
             <a href="contact.html">Contact</a>
             <a href="courses.html">Courses</a>
         </nav>
     </header>
 
+    <!-- 🍩 RECIPE CONTENT SECTION -->
+    <!-- Main content area for the doughnut recipe -->
     <section class="recipe-page-content">
         
+        <!-- Recipe title -->
         <h1 class="recipe-title">Homemade Glazed Doughnuts 🍩</h1>
-        <p class="recipe-summary">Learn how to make yeast-risen doughnuts that are light, airy, and coated in a simple, sweet glaze.</p>
         
+        <!-- Short recipe summary -->
+        <p class="recipe-summary">
+            Learn how to make yeast-risen doughnuts that are light, airy, and coated in a simple, sweet glaze.
+        </p>
+        
+        <!-- Quick recipe info (prep time, fry time, servings) -->
         <div class="recipe-info">
             <span class="info-item">⏱️ 45 min prep</span>
             <span class="info-item">🔥 15 min fry</span>
             <span class="info-item">👤 Makes 12 doughnuts</span>
         </div>
         
+        <!-- Grid layout for ingredients and instructions -->
         <div class="recipe-details-grid">
             
+            <!-- 🥣 Ingredients list -->
             <div class="ingredients">
                 <h2>Ingredients 🥣</h2>
                 <ul>
@@ -47,20 +70,23 @@
                 </ul>
             </div>
 
+            <!-- 📝 Step-by-step instructions -->
             <div class="instructions">
                 <h2>Instructions 📝</h2>
                 <ol>
-                    <li>Activate Yeast: Mix milk, yeast, and 1 tsp of sugar. Let stand for 5 minutes.</li>
-                    <li>Mix Dough: Combine the yeast mixture, remaining sugar, vanilla, eggs, flour, and salt. Mix until a shaggy dough forms.</li>
-                    <li>Add Butter: Knead in the softened butter until the dough is smooth and elastic.</li>
-                    <li>First Rise: Place in a greased bowl, cover, and let rise for 1-1.5 hours until doubled in size.</li>
-                    <li>Shape & Fry: Roll out dough, cut into rings, and let rise for another 30 minutes. Fry in oil at 180°C until golden brown.</li>
-                    <li>Glaze: Dip warm doughnuts into a simple powdered sugar glaze and serve immediately.</li>
+                    <li><strong>Activate Yeast:</strong> Mix milk, yeast, and 1 tsp of sugar. Let stand for 5 minutes.</li>
+                    <li><strong>Mix Dough:</strong> Combine the yeast mixture, remaining sugar, vanilla, eggs, flour, and salt. Mix until a shaggy dough forms.</li>
+                    <li><strong>Add Butter:</strong> Knead in the softened butter until the dough is smooth and elastic.</li>
+                    <li><strong>First Rise:</strong> Place in a greased bowl, cover, and let rise for 1–1.5 hours until doubled in size.</li>
+                    <li><strong>Shape & Fry:</strong> Roll out dough, cut into rings, and let rise for another 30 minutes. Fry in oil at 180°C until golden brown.</li>
+                    <li><strong>Glaze:</strong> Dip warm doughnuts into a simple powdered sugar glaze and serve immediately.</li>
                 </ol>
             </div>
         </div>
     </section>
 
+    <!-- 🧁 FOOTER SECTION -->
+    <!-- Displays site ownership and credit line -->
     <footer>
         <p>© 2025 Vanilla Blog | Made with ❤️ by Shira & Naomi</p>
     </footer>
