@@ -11,19 +11,6 @@
     text-align: center; /* Center headings and summary */
 }
 
-/* Headings and summary */
-.recipe-title {
-    color: #d95f84;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.recipe-summary {
-    font-size: 1.1em;
-    color: #4a3c2a;
-    margin-bottom: 30px;
-}
-
 /* Quick info (prep/cook times) */
 .recipe-info {
     display: flex;
@@ -85,16 +72,4 @@
 .instructions li {
     margin-bottom: 15px; /* Space between list items */
     line-height: 1.4;    /* Comfortable line spacing */
-}
-
-/* Responsive layout for smaller screens */
-@media (max-width: 768px) {
-    .recipe-details-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .recipe-info {
-        flex-direction: column;
-        gap: 5px;
-    }
 }

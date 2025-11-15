@@ -2,58 +2,6 @@
   🎨 CSS for Vanilla 🍰 Courses Page
   ============================= */
 
-/* 🌼 General Page Style */
-body {
-  background-color: #fff8f9; /* Soft pastel background */
-  font-family: "Poppins", sans-serif; /* Clean modern font */
-  color: #4a3a36;
-  margin: 0;
-}
-
-/* 🍰 Header Style */
-header {
-  background-color: #fcdbe7; /* Pink header background */
-  text-align: center;
-  padding: 15px 0;
-}
-
-/* Logo inside header */
-.logo {
-  height: 90px;
-  margin-bottom: 10px;
-}
-
-/* 🔗 Navigation Links */
-nav a {
-  color: #4a3a36;
-  text-decoration: none;
-  margin: 0 12px;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-/* Highlight active or hovered link */
-nav a:hover,
-nav a.active {
-  color: #d85b84;
-}
-
-/* 🍬 Title of the page */
-.page-title {
-  text-align: center;
-  color: #d85b84;
-  font-size: 2.2em;
-  margin-top: 40px;
-  font-weight: 700;
-}
-
-/* Short intro paragraph under title */
-.page-intro {
-  text-align: center;
-  font-size: 1.1em;
-  color: #7a6560;
-  margin-bottom: 40px;
-}
 
 /* 🧁 Courses Grid Layout — one horizontal scrollable row */
 .courses-grid {
@@ -117,33 +65,6 @@ nav a.active {
 .price {
   font-weight: bold;
   margin: 10px 0;
-  color: #4a3a36;
-}
-
-/* “Join Now” button style */
-.btn {
-  display: inline-block;
-  background-color: #f9a4b7;
-  color: white;
-  border-radius: 30px;
-  padding: 10px 24px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-/* Button hover effect */
-.btn:hover {
-  background-color: #e86f8d;
-  transform: scale(1.05);
-}
-
-/* 🩷 Footer style */
-footer {
-  background-color: #fcdbe7;
-  text-align: center;
-  padding: 10px;
-  font-size: 0.9em;
   color: #4a3a36;
 }
 

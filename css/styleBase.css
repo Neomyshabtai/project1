@@ -20,6 +20,23 @@ body {
   to { opacity: 1; }
 }
 
+ /* 🍬 Title of the page */
+.page-title {
+  text-align: center;
+  color: #d85b84;
+  font-size: 2.2em;
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+/* Short intro paragraph under title */
+.page-intro {
+  text-align: center;
+  font-size: 1.1em;
+  color: #7a6560;
+  margin-bottom: 40px;
+}
+
 /* 🍰 Header */
 /* Styles for the website header, including logo and navigation menu */
 header {
@@ -210,105 +227,62 @@ footer {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* 🌈 Confetti canvas layer positioned above all content */
-#confetti {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none; /* Prevents blocking clicks */
-  z-index: 999; /* Keeps it on top */
+/* ================================================= */
+/* 📱 RESPONSIVE BASE ADJUSTMENTS (Max-width: 768px) */
+/* These styles ensure main site components scale down on mobile screens. */
+/* ================================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. GLOBAL TEXT & LAYOUT ADJUSTMENTS */
+    body {
+        /* Prevents horizontal scroll that can occur from element scaling */
+        overflow-x: hidden;
+    }
+
+    /* Scaling down main hero/page titles for better fit */
+    .hero-text h2,
+    .page-title {
+        font-size: 2.5em; 
+    }
+
+    /* Scaling down secondary text */
+    .hero-text p,
+    .page-intro {
+        font-size: 1.1em;
+    }
+    
+    /* 2. HEADER & NAVIGATION */
+    header {
+        /* Reduce overall top/bottom padding for less screen consumption */
+        padding: 10px;
+    }
+    
+    /* Reduce gap between navigation links */
+    nav {
+        gap: 15px; 
+    }
+
+    /* 3. GENERAL BUTTONS */
+    .btn {
+        /* Reduce overall button size (padding) for mobile tapping */
+        padding: 12px 30px; 
+        font-size: 1em;
+        /* Reduce margin between stacked buttons */
+        margin: 0 5px 15px 5px; 
+    }
+    
+    /* 4. FOOTER & FLOATING ELEMENTS */
+    footer {
+        padding: 12px;
+    }
+    
+    /* Ensure the floating note remains easily accessible but not too large */
+    .welcome-note {
+        bottom: 10px;
+        right: 10px;
+        font-size: 0.85em;
+        padding: 8px 15px;
+    }
 }
 
-/* 🍮 Courses Page */
-/* Styles specifically for the “Courses” page */
-.courses {
-  padding: 80px 50px;
-  text-align: center;
-  background-color: #fffaf7;
-}
-
-/* Page title style */
-.page-title {
-  font-size: 2.8em;
-  color: #d95f84;
-  margin-bottom: 10px;
-}
-
-/* Intro paragraph under the title */
-.page-intro {
-  font-size: 1.2em;
-  color: #4a3c2a;
-  margin-bottom: 50px;
-}
-
-/* Grid layout for all course cards */
-.courses-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
-  gap: 35px;
-  justify-content: center;
-  align-items: stretch;
-}
-
-/* Individual course card styling */
-.course-card {
-  background-color: #ffffffdd;
-  border-radius: 20px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  padding: 25px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Card hover effect — slight lift */
-.course-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-}
-
-/* Course image style */
-.course-card img {
-  width: 100%;
-  border-radius: 15px;
-  height: 200px;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-/* Course title */
-.course-card h3 {
-  color: #d95f84;
-  margin-bottom: 10px;
-}
-
-/* Course description */
-.course-card p {
-  font-size: 1em;
-  color: #4a3c2a;
-  line-height: 1.5;
-}
-
-/* Price text */
-.price {
-  font-weight: bold;
-  color: #e26a8a;
-  font-size: 1.2em;
-  margin: 10px 0;
-}
-
-/* “Join Now” button inside each course card */
-.course-card .btn {
-  display: inline-block;
-  background-color: #f6b6c0;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-/* Button hover inside course card */
-.course-card .btn:hover {
-  background-color: #e5899c;
-  transform: scale(1.05);
-}

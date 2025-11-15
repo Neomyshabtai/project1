@@ -2,11 +2,6 @@
   🍰 Vertical Recipes List Styles
   ================================= */
 
-/* Center page title and intro text */
-.page-title, 
-.page-intro {
-    text-align: center;
-}
 
 /* Recipes list layout */
 .recipes-list {
@@ -49,16 +44,4 @@
 
 .recipe-card-vertical p {
   margin: 5px 0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .recipe-card-vertical {
-    max-width: 90%; 
-    margin: 0 auto 25px auto;
-  }
-
-  .recipe-card-vertical img {
-     height: 180px;
-  }
 }
