@@ -3,7 +3,7 @@
   ============================= */
 
 /* 🧁 Courses Grid Layout */
-.courses-grid {
+.courses {
   display: flex;
   justify-content: center;   /* centered */
   align-items: stretch;
@@ -14,7 +14,7 @@
 }
 
 @media (max-width: 768px) {
-  .courses-grid {
+  .courses {
     flex-wrap: wrap;          /* mobile — multiple rows */
     justify-content: center;  /* centered */
     padding: 20px;
