@@ -1,4 +1,4 @@
-/* 🌸 General Style */
+/* 🌸 Base Style */
 html {
   scroll-behavior: smooth; /* Enables smooth scrolling between sections */
 }
@@ -12,9 +12,9 @@ body {
 @media (max-width: 768px) {
   body {
     display: flex;
-    justify-content: center; /* ממקם את התוכן באמצע במסכים קטנים */
-    flex-direction: column;  /* חשוב כדי לא לשבור את הזרימה של אלמנטים */
-    align-items: center;     /* ממקם גם אנכית */
+    justify-content: center; /* Positions the content in the middle on small screens */
+    flex-direction: column;  /* Important to not break the flow of elements */
+    align-items: center;     /* Also positions vertically */
   }
 }
 @keyframes fadeInBody {
